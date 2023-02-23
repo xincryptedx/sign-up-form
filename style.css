@@ -6,15 +6,21 @@
 :root{
     --main-bg-color: hsl(190, 100%, 5%);
     --main-text-color: hsl(190, 75%, 15%);
+
     --link-color: hsl(130, 100%, 35%);
     --link-visited-color: hsl(130, 100%, 35%);
     --link-active-color: hsl(70, 100%, 70%);
+
     --card-bg-color: hsl(190, 20%, 93%);
     --form-bg-color: hsl(190, 0%, 98%);
+
     --submit-button-color: hsl(172, 80%, 50%);
     --submit-button-hover-color: hsl(172, 80%, 40%);
     --submit-button-active-color: hsl(172, 80%, 35%);
+
     --logo-text-color: hsl(190, 20%, 98%);
+
+    --input-border-color: hsl(0, 0%, 85%);
 
     --form-margin-left: 30px;
 }
@@ -137,6 +143,13 @@ div.input-div {
     flex-direction: column;
 
     margin-right: 50px;
+}
+
+.input-div input {
+    border: 1px solid var(--input-border-color);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
 }
 
 .form-content button[type='submit'] {
