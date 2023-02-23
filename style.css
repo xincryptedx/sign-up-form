@@ -4,8 +4,8 @@
     --link-color: hsl(130, 100%, 70%);
     --link-visited-color: hsl(130, 100%, 70%);
     --link-active-color: hsl(70, 100%, 70%);
-    --card-bg-color: hsl(190, 20%, 95%);
-    --form-bg-color: hsl(190, 0%, 85%);
+    --card-bg-color: hsl(190, 20%, 98%);
+    --form-bg-color: hsl(190, 0%, 93%);
 
     --form-margin-left: 30px;
 }
@@ -67,6 +67,7 @@ div.form-content {
 p.form-info {
     margin: 80px var(--form-margin-left) 40px;
     max-width: 65ch;
+    font-weight: bold;
 }
 
 form.sign-up {
@@ -74,7 +75,7 @@ form.sign-up {
     padding: 20px 0px;
     background-color: var(--form-bg-color);
 
-    box-shadow: 3px 3px 3px hsl(0, 0%, 33%);
+    box-shadow: 3px 3px 3px hsl(0, 0%, 70%);
 }
 
 h2.form-header {
@@ -98,9 +99,11 @@ div.input-div {
 button[type='submit'].sign-up {
     margin-left: var(--form-margin-left);
     margin-top: 20px;
+    padding: 5px 10px;
 }
 
 p.existing-account-info {
     margin-left: var(--form-margin-left);
     margin-top: 20px;
+    font-size: 80%;
 }
