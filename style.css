@@ -63,6 +63,10 @@ div.logo-content img {
     filter: brightness(400%);
 }
 
+div.logo-content p {
+    font-size: 80%;
+}
+
 div.icon-background {
     display: flex;
     align-items: center;
