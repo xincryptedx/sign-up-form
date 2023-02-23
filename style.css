@@ -59,6 +59,10 @@ div.logo-content {
     width: 30%;
 }
 
+div.logo-content img {
+    filter: brightness(400%);
+}
+
 div.icon-background {
     display: flex;
     align-items: center;
