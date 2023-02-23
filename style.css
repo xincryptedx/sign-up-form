@@ -4,6 +4,7 @@
     --link-color: hsl(130, 100%, 70%);
     --link-visited-color: hsl(130, 100%, 70%);
     --link-active-color: hsl(70, 100%, 70%);
+    --card-bg-color: hsl(190, 100%, 10%);
 }
 
 * {
@@ -18,9 +19,12 @@ label {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,4 +38,25 @@ a:visited {
 
 a:active {
     color: var(--link-active-color);
+}
+
+div.main-content {
+    display: flex;
+    position: relative;
+    width: 80%;
+}
+
+div.logo-content {
+    background-image: url(johny-goerend-Oz2ZQ2j8We8-unsplash.jpg);
+    width: 30%;
+}
+
+#logo-img {
+    width: 20%;
+}
+
+div.form-content {
+    background-color: var(--card-bg-color);
+    padding: 80px 40px 40px;
+    width: 70%;
 }
