@@ -1,3 +1,8 @@
+@font-face {
+    font-family: orbitron;
+    src: url(fonts/orbitron-variablefont_wght-webfont.woff2), url(fonts/orbitron-variablefont_wght-webfont.woff);
+}
+
 :root{
     --main-bg-color: hsl(190, 100%, 5%);
     --main-text-color: hsl(190, 75%, 15%);
@@ -81,6 +86,7 @@ div.icon-background p {
     color: var(--form-bg-color);
     font-size: 42px;
     text-align: center;
+    font-family: "orbitron", Arial, Helvetica, sans-serif;
 }
 
 #logo-img {
