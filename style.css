@@ -11,9 +11,10 @@
     --link-active-color: hsl(70, 100%, 70%);
     --card-bg-color: hsl(190, 20%, 93%);
     --form-bg-color: hsl(190, 0%, 98%);
-    --submit-button-color: hsl(180, 80%, 50%);
-    --submit-button-hover-color: hsl(180, 80%, 45%);
-    --submit-button-active-color: hsl(180, 80%, 35%);
+    --submit-button-color: hsl(172, 80%, 50%);
+    --submit-button-hover-color: hsl(172, 80%, 40%);
+    --submit-button-active-color: hsl(172, 80%, 35%);
+    --logo-text-color: hsl(190, 20%, 98%);
 
     --form-margin-left: 30px;
 }
@@ -73,6 +74,7 @@ div.logo-content img {
 
 div.logo-content p {
     font-size: 80%;
+    color: var(--logo-text-color);
 }
 
 div.icon-background {
@@ -86,7 +88,7 @@ div.icon-background {
 }
 
 div.icon-background p {
-    color: var(--form-bg-color);
+    color: var(--logo-text-color);
     font-size: 42px;
     text-align: center;
     font-family: "orbitron", Arial, Helvetica, sans-serif;
