@@ -1,10 +1,13 @@
 :root{
-    --main-bg-color: hsl(192, 100%, 5%);
-    --main-text-color: hsl(190, 100%, 70%);
+    --main-bg-color: hsl(190, 100%, 5%);
+    --main-text-color: hsl(190, 100%, 20%);
     --link-color: hsl(130, 100%, 70%);
     --link-visited-color: hsl(130, 100%, 70%);
     --link-active-color: hsl(70, 100%, 70%);
-    --card-bg-color: hsl(190, 100%, 10%);
+    --card-bg-color: hsl(190, 20%, 95%);
+    --form-bg-color: hsl(190, 0%, 85%);
+
+    --form-margin-left: 30px;
 }
 
 * {
@@ -43,7 +46,7 @@ a:active {
 div.main-content {
     display: flex;
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 div.logo-content {
@@ -57,6 +60,38 @@ div.logo-content {
 
 div.form-content {
     background-color: var(--card-bg-color);
-    padding: 80px 40px 40px;
     width: 70%;
+    padding: 20px 0px;
+}
+
+p.form-info {
+    margin: 80px var(--form-margin-left) 40px;
+    max-width: 80ch;
+}
+
+form.sign-up {
+    margin-top: 20px;
+    padding: 20px 0px;
+    background-color: var(--form-bg-color);
+
+    box-shadow: 3px 3px 3px hsl(0, 0%, 33%);
+}
+
+h2.form-header {
+    margin-left: var(--form-margin-left);
+}
+
+div.form-row {
+    margin-left: var(--form-margin-left);
+    margin-top: 20px;
+}
+
+button[type='submit'].sign-up {
+    margin-left: var(--form-margin-left);
+    margin-top: 20px;
+}
+
+p.existing-account-info {
+    margin-left: var(--form-margin-left);
+    margin-top: 20px;
 }
