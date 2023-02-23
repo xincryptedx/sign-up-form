@@ -11,6 +11,9 @@
     --link-active-color: hsl(70, 100%, 70%);
     --card-bg-color: hsl(190, 20%, 93%);
     --form-bg-color: hsl(190, 0%, 98%);
+    --submit-button-color: hsl(180, 80%, 50%);
+    --submit-button-hover-color: hsl(180, 80%, 45%);
+    --submit-button-active-color: hsl(180, 80%, 35%);
 
     --form-margin-left: 30px;
 }
@@ -134,11 +137,24 @@ div.input-div {
     margin-right: 50px;
 }
 
-button[type='submit'].sign-up {
+.form-content button[type='submit'] {
     max-width: fit-content;
     margin-left: var(--form-margin-left);
     margin-top: 20px;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    background-color: var(--submit-button-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-content button[type='submit']:hover {
+    background-color: var(--submit-button-hover-color);
+    cursor: pointer;
+}
+
+.form-content button[type='submit']:active {
+    background-color: var(--submit-button-active-color);
 }
 
 p.existing-account-info {
