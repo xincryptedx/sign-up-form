@@ -66,7 +66,7 @@ div.form-content {
 
 p.form-info {
     margin: 80px var(--form-margin-left) 40px;
-    max-width: 80ch;
+    max-width: 65ch;
 }
 
 form.sign-up {
@@ -82,8 +82,10 @@ h2.form-header {
 }
 
 div.form-row {
+    display: flex;
+
     margin-left: var(--form-margin-left);
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 button[type='submit'].sign-up {
