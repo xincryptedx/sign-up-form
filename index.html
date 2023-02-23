@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="signup-form.js"></script>
+  <script src="signup-form.js" defer></script>
   <title>Document</title>
 </head>
 <body>
@@ -63,8 +63,8 @@
             required
             minlength="8"
             maxlength="64"
-            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
-            title="Must be 8 characters min and contain at least one letter and number.">
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="Must be 8 characters min and contain at least one lowercase, one uppercase and one number.">
           </div>
           <div class="input-div">
             <label for="pwd-confirm">Confirm Password:</label>
