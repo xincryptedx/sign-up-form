@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="signup-form.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -33,28 +34,37 @@
         <h2 class="form-header">Prepare for Liftoff!</h2>
         <div class="form-row">
           <div class="input-div">
-            <label for="first-name">First Name:</label>
-            <input type="text" name="first-name" id="first-name">
+            <label for="first-name">* First Name</label>
+            <input type="text" name="first-name" id="first-name"
+                   required
+                   maxlength="25">
           </div>
           <div class="input-div">
-            <label for="last-name">Last Name:</label>
-            <input type="text" name="last-name" id="last-name">
+            <label for="last-name">* Last Name</label>
+            <input type="text" name="last-name" id="last-name"
+                   required
+                   maxlength="25">
           </div>
         </div>
         <div class="form-row">
           <div class="input-div">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+            <label for="email">* Email</label>
+            <input type="email" name="email" id="email" required>
           </div>
           <div class="input-div">
-            <label for="phone">Phone Number:</label>
+            <label for="phone">Phone Number</label>
             <input type="tel" name="phone-number" id="phone">
           </div>
         </div>
         <div class="form-row">
           <div class="input-div">
             <label for="pwd">Password:</label>
-            <input type="password" name="pwd" id="pwd">
+            <input type="password" name="pwd" id="pwd"
+            required
+            minlength="8"
+            maxlength="64"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+            title="Must be 8 characters min and contain at least one letter and number.">
           </div>
           <div class="input-div">
             <label for="pwd-confirm">Confirm Password:</label>
