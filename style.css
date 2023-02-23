@@ -1,0 +1,37 @@
+:root{
+    --main-bg-color: hsl(192, 100%, 5%);
+    --main-text-color: hsl(190, 100%, 70%);
+    --link-color: hsl(130, 100%, 70%);
+    --link-visited-color: hsl(130, 100%, 70%);
+    --link-active-color: hsl(70, 100%, 70%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+label {
+    font-family: inherit;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a:active {
+    color: var(--link-active-color);
+}
