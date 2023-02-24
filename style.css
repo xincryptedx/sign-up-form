@@ -83,6 +83,7 @@ div.logo-content img {
 div.logo-content p {
     font-size: 80%;
     color: var(--logo-text-color);
+    overflow: hidden;
 }
 
 div.icon-background {
