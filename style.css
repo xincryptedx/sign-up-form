@@ -158,6 +158,10 @@ div.input-div {
     border: 2px solid var(--input-focused-color);
 }
 
+input.error {
+    border-color: red;
+}
+
 .form-content button[type='submit'] {
     max-width: fit-content;
     margin-left: var(--form-margin-left);
